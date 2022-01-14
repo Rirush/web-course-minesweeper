@@ -140,6 +140,9 @@ function revealCell(x, y, cascading) {
 }
 
 function markCell(x, y) {
+    if (gameOver) {
+        return;
+    }
     if (field[x][y] === "open") {
         return;
     }
