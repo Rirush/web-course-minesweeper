@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 36.0rem;
+    height: 36.0rem;
+    margin: 5rem auto 0 auto;
+}
+
+.cell {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem 0.5rem 0 0;
+    background: #BBBBBB 0 0 no-repeat padding-box;
+    border: 1px solid #707070;
+    transition: 0.1s box-shadow;
+}
+
+.cell--selected {
+    box-shadow: 0 0 0 2px #04BEEE80;
+}
+
+.cell--open {
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    font: normal normal bold 1.25rem/1.5rem Roboto;
+    color: #707070;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.cell--mine {
+    background: #C42828 url('assets/bomb.svg') 0.125rem 0.125rem no-repeat padding-box;
+    background-size: 2rem 2rem;
+}
+
+.cell--flag {
+    background: #FFFFFF url('assets/flag.svg') 0.125rem 0.125rem no-repeat padding-box;
+    background-size: 2rem 2rem;
+}
+
+.cell--wrong {
+    background-color: #e5a2a2;
+}
+
+.cell--correct {
+    background-color: #4ab628;
+}
+
+.flag-hint {
+    width: 36rem;
+    margin: 1rem auto;
+}
